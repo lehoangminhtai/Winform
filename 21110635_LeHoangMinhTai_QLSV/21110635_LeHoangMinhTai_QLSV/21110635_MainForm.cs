@@ -1,0 +1,37 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace _21110635_LeHoangMinhTai_QLSV
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void addNewStudentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _21110635_AddStudentForm addStdF = new _21110635_AddStudentForm();
+            addStdF.Show(this);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void studentListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            studentListForm studentListForm = new studentListForm();
+            studentListForm.Show(this);
+        }
+    }
+}

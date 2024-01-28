@@ -1,0 +1,10 @@
+D:\Winform\W1\21110635_Lê Hoàng Minh Tài_ComplexNumber\21110635_Lê Hoàng Minh Tài_ComplexNumber\bin\Debug\21110635_Lê Hoàng Minh Tài_ComplexNumber.exe.config
+D:\Winform\W1\21110635_Lê Hoàng Minh Tài_ComplexNumber\21110635_Lê Hoàng Minh Tài_ComplexNumber\bin\Debug\21110635_Lê Hoàng Minh Tài_ComplexNumber.exe
+D:\Winform\W1\21110635_Lê Hoàng Minh Tài_ComplexNumber\21110635_Lê Hoàng Minh Tài_ComplexNumber\bin\Debug\21110635_Lê Hoàng Minh Tài_ComplexNumber.pdb
+D:\Winform\W1\21110635_Lê Hoàng Minh Tài_ComplexNumber\21110635_Lê Hoàng Minh Tài_ComplexNumber\obj\Debug\21110635_Lê Hoàng Minh Tài_ComplexNumber.csproj.AssemblyReference.cache
+D:\Winform\W1\21110635_Lê Hoàng Minh Tài_ComplexNumber\21110635_Lê Hoàng Minh Tài_ComplexNumber\obj\Debug\_21110635_Lê_Hoàng_Minh_Tài_ComplexNumber.Form1.resources
+D:\Winform\W1\21110635_Lê Hoàng Minh Tài_ComplexNumber\21110635_Lê Hoàng Minh Tài_ComplexNumber\obj\Debug\_21110635_Lê_Hoàng_Minh_Tài_ComplexNumber.Properties.Resources.resources
+D:\Winform\W1\21110635_Lê Hoàng Minh Tài_ComplexNumber\21110635_Lê Hoàng Minh Tài_ComplexNumber\obj\Debug\21110635_Lê Hoàng Minh Tài_ComplexNumber.csproj.GenerateResource.cache
+D:\Winform\W1\21110635_Lê Hoàng Minh Tài_ComplexNumber\21110635_Lê Hoàng Minh Tài_ComplexNumber\obj\Debug\21110635_Lê Hoàng Minh Tài_ComplexNumber.csproj.CoreCompileInputs.cache
+D:\Winform\W1\21110635_Lê Hoàng Minh Tài_ComplexNumber\21110635_Lê Hoàng Minh Tài_ComplexNumber\obj\Debug\21110635_Lê Hoàng Minh Tài_ComplexNumber.exe
+D:\Winform\W1\21110635_Lê Hoàng Minh Tài_ComplexNumber\21110635_Lê Hoàng Minh Tài_ComplexNumber\obj\Debug\21110635_Lê Hoàng Minh Tài_ComplexNumber.pdb
