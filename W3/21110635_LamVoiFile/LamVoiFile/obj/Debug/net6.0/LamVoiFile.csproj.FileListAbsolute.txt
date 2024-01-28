@@ -1,0 +1,14 @@
+D:\Winform\W3\LamVoiFile\LamVoiFile\bin\Debug\net6.0\LamVoiFile.exe
+D:\Winform\W3\LamVoiFile\LamVoiFile\bin\Debug\net6.0\LamVoiFile.deps.json
+D:\Winform\W3\LamVoiFile\LamVoiFile\bin\Debug\net6.0\LamVoiFile.runtimeconfig.json
+D:\Winform\W3\LamVoiFile\LamVoiFile\bin\Debug\net6.0\LamVoiFile.dll
+D:\Winform\W3\LamVoiFile\LamVoiFile\bin\Debug\net6.0\LamVoiFile.pdb
+D:\Winform\W3\LamVoiFile\LamVoiFile\obj\Debug\net6.0\LamVoiFile.GeneratedMSBuildEditorConfig.editorconfig
+D:\Winform\W3\LamVoiFile\LamVoiFile\obj\Debug\net6.0\LamVoiFile.AssemblyInfoInputs.cache
+D:\Winform\W3\LamVoiFile\LamVoiFile\obj\Debug\net6.0\LamVoiFile.AssemblyInfo.cs
+D:\Winform\W3\LamVoiFile\LamVoiFile\obj\Debug\net6.0\LamVoiFile.csproj.CoreCompileInputs.cache
+D:\Winform\W3\LamVoiFile\LamVoiFile\obj\Debug\net6.0\LamVoiFile.dll
+D:\Winform\W3\LamVoiFile\LamVoiFile\obj\Debug\net6.0\refint\LamVoiFile.dll
+D:\Winform\W3\LamVoiFile\LamVoiFile\obj\Debug\net6.0\LamVoiFile.pdb
+D:\Winform\W3\LamVoiFile\LamVoiFile\obj\Debug\net6.0\LamVoiFile.genruntimeconfig.cache
+D:\Winform\W3\LamVoiFile\LamVoiFile\obj\Debug\net6.0\ref\LamVoiFile.dll

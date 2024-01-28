@@ -1,0 +1,4 @@
+Boss
+Hourly Worker
+Commission Workers
+Part Time

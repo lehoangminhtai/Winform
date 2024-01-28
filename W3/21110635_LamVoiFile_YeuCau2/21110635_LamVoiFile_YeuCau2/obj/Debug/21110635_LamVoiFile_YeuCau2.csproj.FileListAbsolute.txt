@@ -1,0 +1,10 @@
+D:\Winform\Winform\W3\21110635_LamVoiFile_YeuCau2\21110635_LamVoiFile_YeuCau2\bin\Debug\21110635_LamVoiFile_YeuCau2.exe.config
+D:\Winform\Winform\W3\21110635_LamVoiFile_YeuCau2\21110635_LamVoiFile_YeuCau2\bin\Debug\21110635_LamVoiFile_YeuCau2.exe
+D:\Winform\Winform\W3\21110635_LamVoiFile_YeuCau2\21110635_LamVoiFile_YeuCau2\bin\Debug\21110635_LamVoiFile_YeuCau2.pdb
+D:\Winform\Winform\W3\21110635_LamVoiFile_YeuCau2\21110635_LamVoiFile_YeuCau2\obj\Debug\21110635_LamVoiFile_YeuCau2.csproj.AssemblyReference.cache
+D:\Winform\Winform\W3\21110635_LamVoiFile_YeuCau2\21110635_LamVoiFile_YeuCau2\obj\Debug\_21110635_LamVoiFile_YeuCau2.Form1.resources
+D:\Winform\Winform\W3\21110635_LamVoiFile_YeuCau2\21110635_LamVoiFile_YeuCau2\obj\Debug\_21110635_LamVoiFile_YeuCau2.Properties.Resources.resources
+D:\Winform\Winform\W3\21110635_LamVoiFile_YeuCau2\21110635_LamVoiFile_YeuCau2\obj\Debug\21110635_LamVoiFile_YeuCau2.csproj.GenerateResource.cache
+D:\Winform\Winform\W3\21110635_LamVoiFile_YeuCau2\21110635_LamVoiFile_YeuCau2\obj\Debug\21110635_LamVoiFile_YeuCau2.csproj.CoreCompileInputs.cache
+D:\Winform\Winform\W3\21110635_LamVoiFile_YeuCau2\21110635_LamVoiFile_YeuCau2\obj\Debug\21110635_LamVoiFile_YeuCau2.exe
+D:\Winform\Winform\W3\21110635_LamVoiFile_YeuCau2\21110635_LamVoiFile_YeuCau2\obj\Debug\21110635_LamVoiFile_YeuCau2.pdb

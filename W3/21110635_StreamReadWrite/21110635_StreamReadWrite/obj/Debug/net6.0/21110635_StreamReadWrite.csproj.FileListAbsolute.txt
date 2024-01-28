@@ -1,0 +1,14 @@
+D:\Winform\Winform\W3\21110635_StreamReadWrite\21110635_StreamReadWrite\bin\Debug\net6.0\21110635_StreamReadWrite.exe
+D:\Winform\Winform\W3\21110635_StreamReadWrite\21110635_StreamReadWrite\bin\Debug\net6.0\21110635_StreamReadWrite.deps.json
+D:\Winform\Winform\W3\21110635_StreamReadWrite\21110635_StreamReadWrite\bin\Debug\net6.0\21110635_StreamReadWrite.runtimeconfig.json
+D:\Winform\Winform\W3\21110635_StreamReadWrite\21110635_StreamReadWrite\bin\Debug\net6.0\21110635_StreamReadWrite.dll
+D:\Winform\Winform\W3\21110635_StreamReadWrite\21110635_StreamReadWrite\bin\Debug\net6.0\21110635_StreamReadWrite.pdb
+D:\Winform\Winform\W3\21110635_StreamReadWrite\21110635_StreamReadWrite\obj\Debug\net6.0\21110635_StreamReadWrite.GeneratedMSBuildEditorConfig.editorconfig
+D:\Winform\Winform\W3\21110635_StreamReadWrite\21110635_StreamReadWrite\obj\Debug\net6.0\21110635_StreamReadWrite.AssemblyInfoInputs.cache
+D:\Winform\Winform\W3\21110635_StreamReadWrite\21110635_StreamReadWrite\obj\Debug\net6.0\21110635_StreamReadWrite.AssemblyInfo.cs
+D:\Winform\Winform\W3\21110635_StreamReadWrite\21110635_StreamReadWrite\obj\Debug\net6.0\21110635_StreamReadWrite.csproj.CoreCompileInputs.cache
+D:\Winform\Winform\W3\21110635_StreamReadWrite\21110635_StreamReadWrite\obj\Debug\net6.0\21110635_StreamReadWrite.dll
+D:\Winform\Winform\W3\21110635_StreamReadWrite\21110635_StreamReadWrite\obj\Debug\net6.0\refint\21110635_StreamReadWrite.dll
+D:\Winform\Winform\W3\21110635_StreamReadWrite\21110635_StreamReadWrite\obj\Debug\net6.0\21110635_StreamReadWrite.pdb
+D:\Winform\Winform\W3\21110635_StreamReadWrite\21110635_StreamReadWrite\obj\Debug\net6.0\21110635_StreamReadWrite.genruntimeconfig.cache
+D:\Winform\Winform\W3\21110635_StreamReadWrite\21110635_StreamReadWrite\obj\Debug\net6.0\ref\21110635_StreamReadWrite.dll
