@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btt_Cancel = new System.Windows.Forms.Button();
             this.btt_Login = new System.Windows.Forms.Button();
             this.TextBoxPassword = new System.Windows.Forms.TextBox();
@@ -38,7 +39,10 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonRegister = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // btt_Cancel
@@ -51,6 +55,7 @@
             this.btt_Cancel.TabIndex = 14;
             this.btt_Cancel.Text = "Cancel";
             this.btt_Cancel.UseVisualStyleBackColor = false;
+            this.btt_Cancel.Click += new System.EventHandler(this.btt_Cancel_Click);
             // 
             // btt_Login
             // 
@@ -72,9 +77,12 @@
             this.TextBoxPassword.PasswordChar = '*';
             this.TextBoxPassword.Size = new System.Drawing.Size(260, 41);
             this.TextBoxPassword.TabIndex = 11;
+            this.toolTip1.SetToolTip(this.TextBoxPassword, "Nhap pass");
+            this.TextBoxPassword.TextChanged += new System.EventHandler(this.TextBoxPassword_TextChanged);
             // 
             // TextBoxUsername
             // 
+            this.errorProvider1.SetError(this.TextBoxUsername, "Please enter username!!");
             this.TextBoxUsername.Location = new System.Drawing.Point(377, 188);
             this.TextBoxUsername.Multiline = true;
             this.TextBoxUsername.Name = "TextBoxUsername";
@@ -146,6 +154,10 @@
             this.buttonRegister.UseVisualStyleBackColor = false;
             this.buttonRegister.Click += new System.EventHandler(this.buttonRegister_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // Login_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -166,6 +178,7 @@
             this.Text = "21110635_Login_Form";
             this.Load += new System.EventHandler(this.Login_Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -183,5 +196,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonRegister;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

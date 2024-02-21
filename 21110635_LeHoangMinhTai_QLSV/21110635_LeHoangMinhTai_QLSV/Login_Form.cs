@@ -59,29 +59,56 @@ namespace _21110635_LeHoangMinhTai_QLSV
 
         private void buttonRegister_Click(object sender, EventArgs e)
         {
-            MY_DB mydb = new MY_DB();
-            SqlDataAdapter adapter = new SqlDataAdapter();
-            DataTable table = new DataTable();  
-            labelLogin.Text = "Register";
-            buttonRegister.Text = "Add";
-            mydb.openConnection();
-            SqlCommand command = new SqlCommand("INSERT INTO log_in(username,password) VALUES (@username,@password)",mydb.getConnection);
-            command.Parameters.Add("@username", SqlDbType.VarChar).Value = TextBoxUsername.Text;
-            command.Parameters.Add("@password", SqlDbType.VarChar).Value = TextBoxPassword.Text;
-            
-            adapter.SelectCommand = command;
-            
-            if((table.Rows.Count > 0))
+            try
             {
-                this.DialogResult= DialogResult.OK;
-                MessageBox.Show("Successfully","", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MY_DB mydb = new MY_DB();
+                SqlDataAdapter adapter = new SqlDataAdapter();
+                DataTable table = new DataTable();
+
+                mydb.openConnection();
+                SqlCommand command = new SqlCommand("INSERT INTO log_in VALUES (@username,@password)", mydb.getConnection);
+                command.Parameters.Add("@username", SqlDbType.VarChar).Value = TextBoxUsername.Text;
+                command.Parameters.Add("@password", SqlDbType.VarChar).Value = TextBoxPassword.Text;
+
+                adapter.SelectCommand = command;
+
+                int rowsAffected = command.ExecuteNonQuery();
+
+                // Kiểm tra xem có bao nhiêu dòng đã được thêm vào cơ sở dữ liệu
+                if (rowsAffected > 0)
+                {
+                    MessageBox.Show("Đã thêm dữ liệu thành công!");
+                }
+                else
+                {
+                    MessageBox.Show("Không thể thêm dữ liệu!");
+                }
+                mydb.closeConnection();
             }
-            else
+            catch
             {
-                MessageBox.Show("Successfully!!!!");
+                MessageBox.Show("User tồn tại!!","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Warning);
             }
 
+            // Đóng kết nối sau khi hoàn tất công việc với cơ sở dữ liệu
+            
            
+
+        }
+
+        private void btt_Cancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void TextBoxPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolTip1_Popup(object sender, PopupEventArgs e)
+        {
+
         }
     }
 }

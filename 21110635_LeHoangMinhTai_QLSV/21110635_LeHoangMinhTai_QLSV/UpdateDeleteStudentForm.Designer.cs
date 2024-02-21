@@ -43,8 +43,8 @@
             this.textBoxAddress = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBoxStudentImage = new System.Windows.Forms.PictureBox();
-            this.buttonEdit = new System.Windows.Forms.Button();
-            this.buttonRemove = new System.Windows.Forms.Button();
+            this.buttonEditStudent = new System.Windows.Forms.Button();
+            this.buttonRemoveStudent = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.radioButtonMale = new System.Windows.Forms.RadioButton();
             this.radioButtonFemale = new System.Windows.Forms.RadioButton();
@@ -189,25 +189,27 @@
             this.pictureBoxStudentImage.TabIndex = 4;
             this.pictureBoxStudentImage.TabStop = false;
             // 
-            // buttonEdit
+            // buttonEditStudent
             // 
-            this.buttonEdit.BackColor = System.Drawing.Color.Orange;
-            this.buttonEdit.Location = new System.Drawing.Point(255, 400);
-            this.buttonEdit.Name = "buttonEdit";
-            this.buttonEdit.Size = new System.Drawing.Size(114, 38);
-            this.buttonEdit.TabIndex = 5;
-            this.buttonEdit.Text = "Edit";
-            this.buttonEdit.UseVisualStyleBackColor = false;
+            this.buttonEditStudent.BackColor = System.Drawing.Color.Orange;
+            this.buttonEditStudent.Location = new System.Drawing.Point(343, 470);
+            this.buttonEditStudent.Name = "buttonEditStudent";
+            this.buttonEditStudent.Size = new System.Drawing.Size(114, 38);
+            this.buttonEditStudent.TabIndex = 5;
+            this.buttonEditStudent.Text = "Edit";
+            this.buttonEditStudent.UseVisualStyleBackColor = false;
+            this.buttonEditStudent.Click += new System.EventHandler(this.buttonEditStudent_Click);
             // 
-            // buttonRemove
+            // buttonRemoveStudent
             // 
-            this.buttonRemove.BackColor = System.Drawing.Color.Red;
-            this.buttonRemove.Location = new System.Drawing.Point(496, 400);
-            this.buttonRemove.Name = "buttonRemove";
-            this.buttonRemove.Size = new System.Drawing.Size(114, 38);
-            this.buttonRemove.TabIndex = 5;
-            this.buttonRemove.Text = "Remove";
-            this.buttonRemove.UseVisualStyleBackColor = false;
+            this.buttonRemoveStudent.BackColor = System.Drawing.Color.Red;
+            this.buttonRemoveStudent.Location = new System.Drawing.Point(496, 470);
+            this.buttonRemoveStudent.Name = "buttonRemoveStudent";
+            this.buttonRemoveStudent.Size = new System.Drawing.Size(114, 38);
+            this.buttonRemoveStudent.TabIndex = 5;
+            this.buttonRemoveStudent.Text = "Remove";
+            this.buttonRemoveStudent.UseVisualStyleBackColor = false;
+            this.buttonRemoveStudent.Click += new System.EventHandler(this.buttonRemoveStudent_Click);
             // 
             // dateTimePicker1
             // 
@@ -264,12 +266,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.ClientSize = new System.Drawing.Size(989, 450);
+            this.ClientSize = new System.Drawing.Size(989, 564);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.buttonRemove);
+            this.Controls.Add(this.buttonRemoveStudent);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.buttonEdit);
+            this.Controls.Add(this.buttonEditStudent);
             this.Controls.Add(this.pictureBoxStudentImage);
             this.Controls.Add(this.textBoxAddress);
             this.Controls.Add(this.buttonFind);
@@ -311,8 +313,8 @@
         public System.Windows.Forms.TextBox textBoxAddress;
         public System.Windows.Forms.Label label8;
         public System.Windows.Forms.PictureBox pictureBoxStudentImage;
-        public System.Windows.Forms.Button buttonEdit;
-        public System.Windows.Forms.Button buttonRemove;
+        public System.Windows.Forms.Button buttonEditStudent;
+        public System.Windows.Forms.Button buttonRemoveStudent;
         public System.Windows.Forms.DateTimePicker dateTimePicker1;
         public System.Windows.Forms.RadioButton radioButtonMale;
         public System.Windows.Forms.RadioButton radioButtonFemale;

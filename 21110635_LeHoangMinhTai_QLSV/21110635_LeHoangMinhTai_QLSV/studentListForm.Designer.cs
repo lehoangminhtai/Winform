@@ -30,10 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.stdBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.qLSVDBDataSet = new _21110635_LeHoangMinhTai_QLSV.QLSVDBDataSet();
-            this.stdTableAdapter = new _21110635_LeHoangMinhTai_QLSV.QLSVDBDataSetTableAdapters.stdTableAdapter();
-            this.button1 = new System.Windows.Forms.Button();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,6 +38,10 @@
             this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.stdBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.qLSVDBDataSet = new _21110635_LeHoangMinhTai_QLSV.QLSVDBDataSet();
+            this.stdTableAdapter = new _21110635_LeHoangMinhTai_QLSV.QLSVDBDataSetTableAdapters.stdTableAdapter();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stdBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet)).BeginInit();
@@ -70,31 +70,6 @@
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
-            // 
-            // stdBindingSource
-            // 
-            this.stdBindingSource.DataMember = "std";
-            this.stdBindingSource.DataSource = this.qLSVDBDataSet;
-            // 
-            // qLSVDBDataSet
-            // 
-            this.qLSVDBDataSet.DataSetName = "QLSVDBDataSet";
-            this.qLSVDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // stdTableAdapter
-            // 
-            this.stdTableAdapter.ClearBeforeFill = true;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.button1.Location = new System.Drawing.Point(384, 404);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(159, 46);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Refresh";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -160,6 +135,31 @@
             this.pictureDataGridViewImageColumn.Name = "pictureDataGridViewImageColumn";
             this.pictureDataGridViewImageColumn.Width = 150;
             // 
+            // stdBindingSource
+            // 
+            this.stdBindingSource.DataMember = "std";
+            this.stdBindingSource.DataSource = this.qLSVDBDataSet;
+            // 
+            // qLSVDBDataSet
+            // 
+            this.qLSVDBDataSet.DataSetName = "QLSVDBDataSet";
+            this.qLSVDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // stdTableAdapter
+            // 
+            this.stdTableAdapter.ClearBeforeFill = true;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.button1.Location = new System.Drawing.Point(384, 404);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(159, 46);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Refresh";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // studentListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -178,8 +178,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
         private QLSVDBDataSet qLSVDBDataSet;
         private System.Windows.Forms.BindingSource stdBindingSource;
         private QLSVDBDataSetTableAdapters.stdTableAdapter stdTableAdapter;
@@ -192,5 +190,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn phoneDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewImageColumn pictureDataGridViewImageColumn;
+        public System.Windows.Forms.DataGridView dataGridView1;
     }
 }

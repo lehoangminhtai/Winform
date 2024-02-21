@@ -50,5 +50,48 @@ namespace _21110635_LeHoangMinhTai_QLSV
             adapter.Fill(table);
             return table;
         }
+
+        public bool updateStudent(int Id, string fname, string lname, DateTime bdate, string gender, string phone, string address, MemoryStream picture)
+        {
+            SqlCommand command = new SqlCommand("UPDATE std SET fname= @fn, lname=@ln, bdate=@bdt,gender=@gdr, phone=@phn, address=@adrs, picture=@pic where Id=@id", mydb.getConnection);
+            command.Parameters.Add("@id", SqlDbType.Int).Value = Id;
+            command.Parameters.Add("@fn", SqlDbType.VarChar).Value = fname;
+            command.Parameters.Add("@ln", SqlDbType.VarChar).Value = lname;
+            command.Parameters.Add("@bdt", SqlDbType.DateTime).Value = bdate;
+            command.Parameters.Add("@gdr", SqlDbType.VarChar).Value = gender;
+            command.Parameters.Add("@phn", SqlDbType.VarChar).Value = phone;
+            command.Parameters.Add("@adrs", SqlDbType.VarChar).Value = address;
+            command.Parameters.Add("@pic", SqlDbType.Image).Value = picture.ToArray();
+
+            mydb.openConnection();
+
+            if ((command.ExecuteNonQuery() == 1))
+            {
+                mydb.closeConnection();
+                return true;
+            }
+            else
+            {
+                mydb.closeConnection();
+                return false;
+            }
+        }
+        public bool deleteStudent(int id)
+        {
+            SqlCommand command = new SqlCommand("Delete from std where Id = @id", mydb.getConnection);
+            command.Parameters.Add("@id", SqlDbType.Int).Value = id;
+            mydb.openConnection();
+            if ((command.ExecuteNonQuery() == 1))
+            {
+                mydb.closeConnection();
+                return true;
+            }
+            else
+            {
+                mydb.closeConnection();
+                return false;
+            }
+            
+        }
     }
 }

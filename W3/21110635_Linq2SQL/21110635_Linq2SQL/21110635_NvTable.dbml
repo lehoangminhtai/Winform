@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Linq2Sql" Class="_21110635_NvTableDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ADMIN-PC;Initial Catalog=Linq2Sql;Integrated Security=True" SettingsObjectName="_21110635_Linq2SQL.Properties.Settings" SettingsPropertyName="Linq2SqlConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.QLNVien" Member="QLNViens">
+    <Type Name="QLNVien">
+      <Column Name="emID" Type="System.String" DbType="Char(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="Char(30)" CanBeNull="true" />
+      <Column Name="Dept" Type="System.String" DbType="Char(30)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

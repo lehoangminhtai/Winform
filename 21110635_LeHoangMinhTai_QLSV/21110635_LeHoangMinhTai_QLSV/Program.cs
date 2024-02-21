@@ -19,7 +19,10 @@ namespace _21110635_LeHoangMinhTai_QLSV
             // Application.Run(new studentListForm());
             Login_Form flogin = new Login_Form();
             if (flogin.ShowDialog() == DialogResult.OK)
-            { Application.Run(new Form1()); }
+            { /*Application.Run(new Load_Form());*/
+                Load_Form fload = new Load_Form();
+                if(fload.ShowDialog() == DialogResult.OK) { Application.Run(new Form1());}
+            }
             else
             { Application.Exit(); }
         }

@@ -23,6 +23,7 @@ namespace _21110635_LeHoangMinhTai_QLSV
         private void studentListForm_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'qLSVDBDataSet.std' table. You can move, or remove it, as needed.
+            
             this.stdTableAdapter.Fill(this.qLSVDBDataSet.std);
             SqlCommand command = new SqlCommand("SELECT * FROM std");
             dataGridView1.ReadOnly = true;

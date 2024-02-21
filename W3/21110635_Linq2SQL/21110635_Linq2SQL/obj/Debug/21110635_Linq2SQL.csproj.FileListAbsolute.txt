@@ -1,0 +1,10 @@
+D:\Winform\Winform\W3\21110635_Linq2SQL\21110635_Linq2SQL\bin\Debug\21110635_Linq2SQL.exe.config
+D:\Winform\Winform\W3\21110635_Linq2SQL\21110635_Linq2SQL\bin\Debug\21110635_Linq2SQL.exe
+D:\Winform\Winform\W3\21110635_Linq2SQL\21110635_Linq2SQL\bin\Debug\21110635_Linq2SQL.pdb
+D:\Winform\Winform\W3\21110635_Linq2SQL\21110635_Linq2SQL\obj\Debug\21110635_Linq2SQL.csproj.AssemblyReference.cache
+D:\Winform\Winform\W3\21110635_Linq2SQL\21110635_Linq2SQL\obj\Debug\_21110635_Linq2SQL.Form1.resources
+D:\Winform\Winform\W3\21110635_Linq2SQL\21110635_Linq2SQL\obj\Debug\_21110635_Linq2SQL.Properties.Resources.resources
+D:\Winform\Winform\W3\21110635_Linq2SQL\21110635_Linq2SQL\obj\Debug\21110635_Linq2SQL.csproj.GenerateResource.cache
+D:\Winform\Winform\W3\21110635_Linq2SQL\21110635_Linq2SQL\obj\Debug\21110635_Linq2SQL.csproj.CoreCompileInputs.cache
+D:\Winform\Winform\W3\21110635_Linq2SQL\21110635_Linq2SQL\obj\Debug\21110635_Linq2SQL.exe
+D:\Winform\Winform\W3\21110635_Linq2SQL\21110635_Linq2SQL\obj\Debug\21110635_Linq2SQL.pdb
