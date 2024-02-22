@@ -1,0 +1,7 @@
+D:\Winform\Winform\W4\ADO\ADOPart2_Code\LayDuLieuDataSet\DuLieuData\bin\Debug\DuLieuData.exe.config
+D:\Winform\Winform\W4\ADO\ADOPart2_Code\LayDuLieuDataSet\DuLieuData\bin\Debug\DuLieuData.exe
+D:\Winform\Winform\W4\ADO\ADOPart2_Code\LayDuLieuDataSet\DuLieuData\bin\Debug\DuLieuData.pdb
+D:\Winform\Winform\W4\ADO\ADOPart2_Code\LayDuLieuDataSet\DuLieuData\obj\Debug\DuLieuData.csproj.AssemblyReference.cache
+D:\Winform\Winform\W4\ADO\ADOPart2_Code\LayDuLieuDataSet\DuLieuData\obj\Debug\DuLieuData.csproj.CoreCompileInputs.cache
+D:\Winform\Winform\W4\ADO\ADOPart2_Code\LayDuLieuDataSet\DuLieuData\obj\Debug\DuLieuData.exe
+D:\Winform\Winform\W4\ADO\ADOPart2_Code\LayDuLieuDataSet\DuLieuData\obj\Debug\DuLieuData.pdb
