@@ -1,0 +1,13 @@
+D:\Winform\Winform\W4\ADO\ADO_Binding_Code\21110635_ADO_binding\21110635_ADO_binding\bin\Debug\21110635_ADO_binding.exe.config
+D:\Winform\Winform\W4\ADO\ADO_Binding_Code\21110635_ADO_binding\21110635_ADO_binding\bin\Debug\21110635_ADO_binding.exe
+D:\Winform\Winform\W4\ADO\ADO_Binding_Code\21110635_ADO_binding\21110635_ADO_binding\bin\Debug\21110635_ADO_binding.pdb
+D:\Winform\Winform\W4\ADO\ADO_Binding_Code\21110635_ADO_binding\21110635_ADO_binding\obj\Debug\21110635_ADO_binding.csproj.AssemblyReference.cache
+D:\Winform\Winform\W4\ADO\ADO_Binding_Code\21110635_ADO_binding\21110635_ADO_binding\obj\Debug\_21110635_ADO_binding.Form1.resources
+D:\Winform\Winform\W4\ADO\ADO_Binding_Code\21110635_ADO_binding\21110635_ADO_binding\obj\Debug\_21110635_ADO_binding.Properties.Resources.resources
+D:\Winform\Winform\W4\ADO\ADO_Binding_Code\21110635_ADO_binding\21110635_ADO_binding\obj\Debug\21110635_ADO_binding.csproj.GenerateResource.cache
+D:\Winform\Winform\W4\ADO\ADO_Binding_Code\21110635_ADO_binding\21110635_ADO_binding\obj\Debug\21110635_ADO_binding.csproj.CoreCompileInputs.cache
+D:\Winform\Winform\W4\ADO\ADO_Binding_Code\21110635_ADO_binding\21110635_ADO_binding\obj\Debug\21110635_ADO_binding.exe
+D:\Winform\Winform\W4\ADO\ADO_Binding_Code\21110635_ADO_binding\21110635_ADO_binding\obj\Debug\21110635_ADO_binding.pdb
+D:\Winform\Winform\W4\ADO\ADO_Binding_Code\21110635_ADO_binding\21110635_ADO_binding\obj\Debug\_21110635_ADO_binding._21110635_DataTable.resources
+D:\Winform\Winform\W4\ADO\ADO_Binding_Code\21110635_ADO_binding\21110635_ADO_binding\obj\Debug\_21110635_ADO_binding._21110635_DataView.resources
+D:\Winform\Winform\W4\ADO\ADO_Binding_Code\21110635_ADO_binding\21110635_ADO_binding\obj\Debug\_21110635_ADO_binding._21110635_DataBinding.resources
