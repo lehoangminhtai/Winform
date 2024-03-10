@@ -132,6 +132,7 @@
             this.editRemoveToolStripMenuItem.Name = "editRemoveToolStripMenuItem";
             this.editRemoveToolStripMenuItem.Size = new System.Drawing.Size(291, 34);
             this.editRemoveToolStripMenuItem.Text = "Edit/Remove";
+            this.editRemoveToolStripMenuItem.Click += new System.EventHandler(this.editRemoveToolStripMenuItem_Click_1);
             // 
             // toolStripSeparator5
             // 

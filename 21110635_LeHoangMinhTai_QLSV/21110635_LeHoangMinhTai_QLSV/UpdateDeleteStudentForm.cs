@@ -7,6 +7,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -39,36 +40,44 @@ namespace _21110635_LeHoangMinhTai_QLSV
 
         private void buttonFind_Click(object sender, EventArgs e)
         {
-            int id = int.Parse(textBoxID.Text);
-            SqlCommand command = new SqlCommand("SELECT id, fname,lname, bdate,gender, phone, address,picture FROM std WHERE id = "+id);
-
-            DataTable table = student.getStudents(command);
-
-            if(table.Rows.Count > 0 )
+            try
             {
-                textBoxFname.Text = table.Rows[0]["fname"].ToString();
-                textBoxLname.Text = table.Rows[0]["lname"].ToString();
-                dateTimePicker1.Value = (DateTime)table.Rows[0]["bdate"];
+                int id = int.Parse(textBoxID.Text);
+                SqlCommand command = new SqlCommand("SELECT id, fname,lname, bdate,gender, phone, address,picture FROM std WHERE id = " + id);
 
-                //gender
-                if (table.Rows[0]["gender"].ToString() == "Female")
+                DataTable table = student.getStudents(command);
+
+                if (table.Rows.Count > 0)
                 {
-                    radioButtonFemale.Checked = true;
+                    textBoxFname.Text = table.Rows[0]["fname"].ToString();
+                    textBoxLname.Text = table.Rows[0]["lname"].ToString();
+                    dateTimePicker1.Value = (DateTime)table.Rows[0]["bdate"];
+
+                    //gender
+                    if (table.Rows[0]["gender"].ToString().Trim() == "Female")
+                    {
+                        radioButtonFemale.Checked = true;
+                    }
+                    else
+                    {
+                        radioButtonMale.Checked = true;
+                    }
+                    textBoxPhone.Text = table.Rows[0]["phone"].ToString();
+                    textBoxAddress.Text = table.Rows[0]["address"].ToString();
+                    byte[] pic = (byte[])table.Rows[0]["picture"];
+                    MemoryStream picture = new MemoryStream(pic);
+                    pictureBoxStudentImage.Image = Image.FromStream(picture);
                 }
                 else
                 {
-                    radioButtonMale.Checked = true;
+                    MessageBox.Show("not found student", "Find Student", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
-                textBoxPhone.Text = table.Rows[0]["phone"].ToString();
-                textBoxAddress.Text = table.Rows[0]["address"].ToString();
-                byte[] pic = (byte[])table.Rows[0]["picture"];
-                MemoryStream picture = new MemoryStream(pic);
-                pictureBoxStudentImage.Image = Image.FromStream(picture);
             }
-            else
+            catch(Exception ex)
             {
-                MessageBox.Show("not found","Find Student", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("loi dinh dang!!");
             }
+
         }
          
         private void textBoxID_KeyPress(object sender, KeyPressEventArgs e)
@@ -80,49 +89,71 @@ namespace _21110635_LeHoangMinhTai_QLSV
 
         private void buttonEditStudent_Click(object sender, EventArgs e)
         {
-            //STUDENT student = new STUDENT();
-            int id = Convert.ToInt32(textBoxID.Text);
-            string fname = textBoxFname.Text;
-            string lname = textBoxLname.Text;
-            DateTime bdate = dateTimePicker1.Value;
-            string phone = textBoxPhone.Text;
-            string adrs = textBoxAddress.Text;
-            string gender = "Male";
-
-            if (radioButtonFemale.Checked)
+            try
             {
-                gender = "Female";
-            }
-
-            MemoryStream pic = new MemoryStream();
-            int born_year = dateTimePicker1.Value.Year;
-            int this_year = DateTime.Now.Year;
-            //  sv tu 10-100,  co the thay doi
-            if (((this_year - born_year) < 10) || ((this_year - born_year) > 100))
-            {
-                MessageBox.Show("The Student Age Must Be Between 10 and 100 year", "Invalid Birth Date", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else if (verif())
-            {
-                try
+                //STUDENT student = new STUDENT();
+                int id = Convert.ToInt32(textBoxID.Text);
+                string fname = textBoxFname.Text;
+                string lname = textBoxLname.Text;
+                DateTime bdate = dateTimePicker1.Value;
+                string phone = textBoxPhone.Text;
+                string adrs = textBoxAddress.Text;
+                string gender = "Male";
+                if (!Regex.IsMatch(fname, @"^[a-zA-Z\s]+$"))
                 {
-                    pictureBoxStudentImage.Image.Save(pic, pictureBoxStudentImage.Image.RawFormat);
-                    if (student.updateStudent(id, fname, lname, bdate, gender, phone, adrs, pic))
+                    MessageBox.Show("Please enter a valid First Name", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                if (!Regex.IsMatch(lname, @"^[a-zA-Z\s]+$"))
+                {
+                    MessageBox.Show("Please enter a valid Last Name", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                if (!Regex.IsMatch(phone, @"^\d{10}$"))
+                {
+                    MessageBox.Show("Please enter a valid 10-digit phone number", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                if (radioButtonFemale.Checked)
+                {
+                    gender = "Female";
+                }
+
+                MemoryStream pic = new MemoryStream();
+                int born_year = dateTimePicker1.Value.Year;
+                int this_year = DateTime.Now.Year;
+                //  sv tu 10-100,  co the thay doi
+                if (((this_year - born_year) < 10) || ((this_year - born_year) > 100))
+                {
+                    MessageBox.Show("The Student Age Must Be Between 10 and 100 year", "Invalid Birth Date", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (verif())
+                {
+                    try
                     {
-                        MessageBox.Show("Student Infor Updated!!!", "Edit Student", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        pictureBoxStudentImage.Image.Save(pic, pictureBoxStudentImage.Image.RawFormat);
+                        if (student.updateStudent(id, fname, lname, bdate, gender, phone, adrs, pic))
+                        {
+                            MessageBox.Show("Student Infor Updated!!!", "Edit Student", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Error", "Edit Student", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
-                    else
+                    catch (Exception ex)
                     {
-                        MessageBox.Show("Error", "Edit Student", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show(ex.Message, "Edit Student!!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     }
                 }
-                catch (Exception ex) {
-                    MessageBox.Show(ex.Message, "Edit Student!!",MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                else
+                {
+                    MessageBox.Show("Input Empty Fields", "Edit Student", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
-            else
+            catch(Exception ex)
             {
-                MessageBox.Show("Empty Fields", "Edit Student", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show(ex.Message);
             }
         }
         //Chức năng kiểm tra dữ liệu vào
@@ -168,6 +199,36 @@ namespace _21110635_LeHoangMinhTai_QLSV
             }
             catch  {
                 MessageBox.Show("Please Enter A Valid Id!!","Delete Student",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+        }
+
+        private void radioButtonMale_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UpdateDeleteStudentForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxFname_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog opf = new OpenFileDialog();
+            opf.Filter = "Select Image(*.jpg;*.png;*.gif)|*.jpg;*.png;*.gif";
+            if ((opf.ShowDialog() == DialogResult.OK))
+            {
+                pictureBoxStudentImage.Image = Image.FromFile(opf.FileName);
             }
         }
     }

@@ -33,5 +33,13 @@ namespace _21110635_LeHoangMinhTai_QLSV
             studentListForm studentListForm = new studentListForm();
             studentListForm.Show(this);
         }
+
+
+
+        private void editRemoveToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            UpdateDeleteStudentForm updateDeleteFrm = new UpdateDeleteStudentForm();
+            updateDeleteFrm.Show(this);
+        }
     }
 }

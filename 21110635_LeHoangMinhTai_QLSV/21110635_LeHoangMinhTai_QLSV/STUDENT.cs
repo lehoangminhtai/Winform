@@ -6,6 +6,8 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace _21110635_LeHoangMinhTai_QLSV
 {
@@ -17,6 +19,8 @@ namespace _21110635_LeHoangMinhTai_QLSV
         //  function to insert a new student
         public bool insertStudent(int Id, string fname, string lname, DateTime bdate, string gender, string phone, string address, MemoryStream picture)
         {
+
+
             SqlCommand command = new SqlCommand("INSERT INTO std (id, fname, lname, bdate, gender, phone, address, picture)" +
                 " VALUES (@id,@fn, @ln, @bdt, @gdr, @phn, @adrs, @pic)", mydb.getConnection);
             command.Parameters.Add("@id", SqlDbType.Int).Value = Id;
@@ -40,6 +44,8 @@ namespace _21110635_LeHoangMinhTai_QLSV
                 mydb.closeConnection();
                 return false;
             }
+
+
         }
 
         public DataTable getStudents(SqlCommand command)

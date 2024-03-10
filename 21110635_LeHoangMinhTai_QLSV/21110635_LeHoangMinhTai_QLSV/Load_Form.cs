@@ -22,10 +22,8 @@ namespace _21110635_LeHoangMinhTai_QLSV
 
         private void progressBar1_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i <= 100; i++)
+            for (int i = 0; i <= 10; i++)
             {
-
-
                 backgroundWorker1.ReportProgress(i);
                 progressBar1.Value = i;
                 // Thực hiện công việc của bạn ở đây
@@ -33,16 +31,9 @@ namespace _21110635_LeHoangMinhTai_QLSV
 
         }
 
-        
-
-        
-    
+ 
 
        
-
-        
-
-
 
         private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
@@ -60,7 +51,7 @@ namespace _21110635_LeHoangMinhTai_QLSV
             for (int i = 1; i <= 100; i++)
             {
                 // Wait 50 milliseconds.  
-                Thread.Sleep(50);
+                Thread.Sleep(5);
                 // Report progress.  
                 backgroundWorker1.ReportProgress(i);
 

@@ -1,0 +1,13 @@
+D:\Winform\Winform\W6\MailService\ExMailService\ExMailService\ExMailService\bin\Debug\ExMailService.exe.config
+D:\Winform\Winform\W6\MailService\ExMailService\ExMailService\ExMailService\bin\Debug\ExMailService.exe
+D:\Winform\Winform\W6\MailService\ExMailService\ExMailService\ExMailService\bin\Debug\ExMailService.pdb
+D:\Winform\Winform\W6\MailService\ExMailService\ExMailService\ExMailService\obj\Debug\ExMailService.csproj.AssemblyReference.cache
+D:\Winform\Winform\W6\MailService\ExMailService\ExMailService\ExMailService\obj\Debug\ExMailService.Form1.resources
+D:\Winform\Winform\W6\MailService\ExMailService\ExMailService\ExMailService\obj\Debug\ExMailService.Properties.Resources.resources
+D:\Winform\Winform\W6\MailService\ExMailService\ExMailService\ExMailService\obj\Debug\ExMailService.csproj.GenerateResource.cache
+D:\Winform\Winform\W6\MailService\ExMailService\ExMailService\ExMailService\obj\Debug\ExMailService.csproj.CoreCompileInputs.cache
+D:\Winform\Winform\W6\MailService\ExMailService\ExMailService\ExMailService\obj\Debug\ExMailService.exe
+D:\Winform\Winform\W6\MailService\ExMailService\ExMailService\ExMailService\obj\Debug\ExMailService.pdb
+D:\Winform\Winform\W6\MailService\ExMailService\ExMailService\ExMailService\bin\Debug\Otp.NET.dll
+D:\Winform\Winform\W6\MailService\ExMailService\ExMailService\ExMailService\obj\Debug\ExMailService.csproj.CopyComplete
+D:\Winform\Winform\W6\MailService\ExMailService\ExMailService\ExMailService\obj\Debug\ExMailService.frmOTP.resources

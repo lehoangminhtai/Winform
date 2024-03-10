@@ -46,12 +46,10 @@
             this.buttonEditStudent = new System.Windows.Forms.Button();
             this.buttonRemoveStudent = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.button4 = new System.Windows.Forms.Button();
             this.radioButtonMale = new System.Windows.Forms.RadioButton();
             this.radioButtonFemale = new System.Windows.Forms.RadioButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStudentImage)).BeginInit();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -125,6 +123,7 @@
             this.textBoxFname.Name = "textBoxFname";
             this.textBoxFname.Size = new System.Drawing.Size(248, 26);
             this.textBoxFname.TabIndex = 1;
+            this.textBoxFname.TextChanged += new System.EventHandler(this.textBoxFname_TextChanged);
             // 
             // textBoxLname
             // 
@@ -219,38 +218,6 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(248, 26);
             this.dateTimePicker1.TabIndex = 6;
             // 
-            // radioButtonMale
-            // 
-            this.radioButtonMale.AutoSize = true;
-            this.radioButtonMale.Location = new System.Drawing.Point(17, 16);
-            this.radioButtonMale.Name = "radioButtonMale";
-            this.radioButtonMale.Size = new System.Drawing.Size(68, 24);
-            this.radioButtonMale.TabIndex = 7;
-            this.radioButtonMale.TabStop = true;
-            this.radioButtonMale.Text = "Male";
-            this.radioButtonMale.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonFemale
-            // 
-            this.radioButtonFemale.AutoSize = true;
-            this.radioButtonFemale.Location = new System.Drawing.Point(143, 16);
-            this.radioButtonFemale.Name = "radioButtonFemale";
-            this.radioButtonFemale.Size = new System.Drawing.Size(87, 24);
-            this.radioButtonFemale.TabIndex = 7;
-            this.radioButtonFemale.TabStop = true;
-            this.radioButtonFemale.Text = "Female";
-            this.radioButtonFemale.UseVisualStyleBackColor = true;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.radioButtonFemale);
-            this.groupBox1.Controls.Add(this.radioButtonMale);
-            this.groupBox1.Location = new System.Drawing.Point(138, 245);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(246, 43);
-            this.groupBox1.TabIndex = 8;
-            this.groupBox1.TabStop = false;
-            // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.Linen;
@@ -260,6 +227,30 @@
             this.button4.TabIndex = 5;
             this.button4.Text = "Upload";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // radioButtonMale
+            // 
+            this.radioButtonMale.AutoSize = true;
+            this.radioButtonMale.Location = new System.Drawing.Point(137, 256);
+            this.radioButtonMale.Name = "radioButtonMale";
+            this.radioButtonMale.Size = new System.Drawing.Size(68, 24);
+            this.radioButtonMale.TabIndex = 7;
+            this.radioButtonMale.TabStop = true;
+            this.radioButtonMale.Text = "Male";
+            this.radioButtonMale.UseVisualStyleBackColor = true;
+            this.radioButtonMale.CheckedChanged += new System.EventHandler(this.radioButtonMale_CheckedChanged);
+            // 
+            // radioButtonFemale
+            // 
+            this.radioButtonFemale.AutoSize = true;
+            this.radioButtonFemale.Location = new System.Drawing.Point(268, 256);
+            this.radioButtonFemale.Name = "radioButtonFemale";
+            this.radioButtonFemale.Size = new System.Drawing.Size(87, 24);
+            this.radioButtonFemale.TabIndex = 7;
+            this.radioButtonFemale.TabStop = true;
+            this.radioButtonFemale.Text = "Female";
+            this.radioButtonFemale.UseVisualStyleBackColor = true;
             // 
             // UpdateDeleteStudentForm
             // 
@@ -267,7 +258,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumAquamarine;
             this.ClientSize = new System.Drawing.Size(989, 564);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.radioButtonMale);
+            this.Controls.Add(this.radioButtonFemale);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.buttonRemoveStudent);
             this.Controls.Add(this.button4);
@@ -289,16 +281,14 @@
             this.Controls.Add(this.label1);
             this.Name = "UpdateDeleteStudentForm";
             this.Text = "21110635_UpdateDeleteStudentForm";
+            this.Load += new System.EventHandler(this.UpdateDeleteStudentForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStudentImage)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        public System.Windows.Forms.TextBox textBoxID;
         public System.Windows.Forms.Label label1;
         public System.Windows.Forms.Label label2;
         public System.Windows.Forms.Label label3;
@@ -316,9 +306,9 @@
         public System.Windows.Forms.Button buttonEditStudent;
         public System.Windows.Forms.Button buttonRemoveStudent;
         public System.Windows.Forms.DateTimePicker dateTimePicker1;
+        public System.Windows.Forms.Button button4;
         public System.Windows.Forms.RadioButton radioButtonMale;
         public System.Windows.Forms.RadioButton radioButtonFemale;
-        public System.Windows.Forms.GroupBox groupBox1;
-        public System.Windows.Forms.Button button4;
+        public System.Windows.Forms.TextBox textBoxID;
     }
 }
