@@ -71,7 +71,7 @@ namespace ExMailService
                 int portNumber = 587; // Cổng của SMTP server (thường là 587 hoặc 25)
                 bool enableSSL = true; // Có sử dụng SSL không
                 string emailFrom = "21110635@student.hcmute.edu.vn"; // Email của bạn
-                string password = "Nguyentam_@1984"; // Mật khẩu email của bạn
+                string password = ""; // Mật khẩu email của bạn
                 string emailTo = toAddress; // Email đích
                 string subjectEmail = "Confirm Account"; // Chủ đề của email
                 string bodyEmail = GenerateOTP(); // Nội dung của email
