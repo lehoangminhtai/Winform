@@ -38,9 +38,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonRegister = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.linkLabelRegister = new System.Windows.Forms.LinkLabel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -142,21 +143,30 @@
             this.label1.TabIndex = 15;
             this.label1.Text = "Don\'t have account?";
             // 
-            // buttonRegister
-            // 
-            this.buttonRegister.BackColor = System.Drawing.Color.DarkKhaki;
-            this.buttonRegister.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonRegister.Location = new System.Drawing.Point(393, 455);
-            this.buttonRegister.Name = "buttonRegister";
-            this.buttonRegister.Size = new System.Drawing.Size(109, 40);
-            this.buttonRegister.TabIndex = 16;
-            this.buttonRegister.Text = "Register";
-            this.buttonRegister.UseVisualStyleBackColor = false;
-            this.buttonRegister.Click += new System.EventHandler(this.buttonRegister_Click);
-            // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
+            // 
+            // linkLabelRegister
+            // 
+            this.linkLabelRegister.AutoSize = true;
+            this.linkLabelRegister.Location = new System.Drawing.Point(407, 465);
+            this.linkLabelRegister.Name = "linkLabelRegister";
+            this.linkLabelRegister.Size = new System.Drawing.Size(69, 20);
+            this.linkLabelRegister.TabIndex = 17;
+            this.linkLabelRegister.TabStop = true;
+            this.linkLabelRegister.Text = "Register";
+            this.linkLabelRegister.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelRegister_LinkClicked);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(500, 338);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(137, 20);
+            this.linkLabel1.TabIndex = 17;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Forgot password?";
             // 
             // Login_Form
             // 
@@ -164,7 +174,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 513);
-            this.Controls.Add(this.buttonRegister);
+            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.linkLabelRegister);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btt_Cancel);
             this.Controls.Add(this.btt_Login);
@@ -195,8 +206,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button buttonRegister;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.LinkLabel linkLabelRegister;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

@@ -41,5 +41,17 @@ namespace _21110635_LeHoangMinhTai_QLSV
             UpdateDeleteStudentForm updateDeleteFrm = new UpdateDeleteStudentForm();
             updateDeleteFrm.Show(this);
         }
+
+        private void staticsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            StaticsForm staticsForm = new StaticsForm();
+            staticsForm.Show();
+        }
+
+        private void manageStudentFormToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ManageStudentForm manage = new ManageStudentForm();
+            manage.Show();
+        }
     }
 }

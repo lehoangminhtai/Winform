@@ -110,5 +110,11 @@ namespace _21110635_LeHoangMinhTai_QLSV
         {
 
         }
+
+        private void linkLabelRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FrmRegister resgister = new FrmRegister();
+            resgister.ShowDialog();
+        }
     }
 }

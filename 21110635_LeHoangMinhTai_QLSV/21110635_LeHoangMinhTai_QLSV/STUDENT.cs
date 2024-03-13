@@ -99,5 +99,28 @@ namespace _21110635_LeHoangMinhTai_QLSV
             }
             
         }
+        string execCount(string query)
+        {
+            SqlCommand command = new SqlCommand(query, mydb.getConnection);
+            mydb.openConnection();
+            String count = command.ExecuteScalar().ToString();
+            mydb.closeConnection();
+            return count;
+        }
+
+        public string totalStudent()
+        {
+            return execCount("SELECT COUNT(*) FROM STD");
+        }
+
+        public string totalMaleStudent()
+        {
+            return execCount("SELECT COUNT(*) FROM STD WHERE gender = 'Male'");
+        }
+
+        public string totalFemaleStudent()
+        {
+            return execCount("SELECT COUNT(*) FROM STD WHERE gender = 'Female'");
+        }
     }
 }

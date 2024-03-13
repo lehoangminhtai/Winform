@@ -120,6 +120,7 @@
             this.staticsToolStripMenuItem.Name = "staticsToolStripMenuItem";
             this.staticsToolStripMenuItem.Size = new System.Drawing.Size(291, 34);
             this.staticsToolStripMenuItem.Text = "Statics";
+            this.staticsToolStripMenuItem.Click += new System.EventHandler(this.staticsToolStripMenuItem_Click);
             // 
             // toolStripSeparator4
             // 
@@ -145,6 +146,7 @@
             this.manageStudentFormToolStripMenuItem.Name = "manageStudentFormToolStripMenuItem";
             this.manageStudentFormToolStripMenuItem.Size = new System.Drawing.Size(291, 34);
             this.manageStudentFormToolStripMenuItem.Text = "Manage Student Form";
+            this.manageStudentFormToolStripMenuItem.Click += new System.EventHandler(this.manageStudentFormToolStripMenuItem_Click);
             // 
             // toolStripSeparator6
             // 

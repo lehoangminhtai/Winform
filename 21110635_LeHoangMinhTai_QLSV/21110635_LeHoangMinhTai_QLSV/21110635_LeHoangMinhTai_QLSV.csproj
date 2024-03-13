@@ -58,6 +58,12 @@
     <Compile Include="21110635_MainForm.Designer.cs">
       <DependentUpon>21110635_MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegister.Designer.cs">
+      <DependentUpon>FrmRegister.cs</DependentUpon>
+    </Compile>
     <Compile Include="Load_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,12 @@
     <Compile Include="Login_Form.Designer.cs">
       <DependentUpon>Login_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManageStudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageStudentForm.Designer.cs">
+      <DependentUpon>ManageStudentForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MY_DB.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -77,6 +89,17 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>QLSVDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLSVDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLSVDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StaticsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaticsForm.Designer.cs">
+      <DependentUpon>StaticsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="STUDENT.cs" />
     <Compile Include="studentListForm.cs">
@@ -97,11 +120,17 @@
     <EmbeddedResource Include="21110635_MainForm.resx">
       <DependentUpon>21110635_MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegister.resx">
+      <DependentUpon>FrmRegister.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Load_Form.resx">
       <DependentUpon>Load_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login_Form.resx">
       <DependentUpon>Login_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageStudentForm.resx">
+      <DependentUpon>ManageStudentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -112,6 +141,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="StaticsForm.resx">
+      <DependentUpon>StaticsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="studentListForm.resx">
       <DependentUpon>studentListForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,6 +169,17 @@
     </None>
     <None Include="QLSVDBDataSet.xss">
       <DependentUpon>QLSVDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLSVDBDataSet1.xsc">
+      <DependentUpon>QLSVDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QLSVDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLSVDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLSVDBDataSet1.xss">
+      <DependentUpon>QLSVDBDataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
